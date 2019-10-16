@@ -1,5 +1,25 @@
-@color : red;
+@import "partials/mixin";
+@import "partials/params";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic');
 
-body {
-  background-color: @color;
+html,body{
+  .clean;
+  width: 100%;
+  color: @font-color;
+  font-family: 'Roboto', sans-serif;
 }
+
+h1,h2,h3,h4,h5,h6,p{
+  .clean;
+}
+
+a {
+  text-decoration: none;
+}
+
+.view-port{
+  max-width: @view_port;
+  width: 100%;
+  margin: 0 auto;
+}
+
