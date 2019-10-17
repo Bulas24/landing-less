@@ -1,0 +1,44 @@
+@import "partials/mixin";
+@import "partials/params";
+
+#features{
+  padding: 40px 0 60px;
+  text-align: center;
+  & img{
+  margin-bottom: 20px;
+    max-width: 80%;
+  }
+
+  & .text{
+  .flex-wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+   max-width: 950px;
+    width: 100%;
+
+    & > div {
+      width: 25%;
+      font-weight: bold;
+      font-size: 16px;
+
+      & > div {
+        position: relative;
+      }
+
+      &.first > div{
+        right: 45px;
+      }
+      &.second > div{
+        right: 15px;
+      }
+      &.third > div{
+        left: 20px;
+      }
+      &.four > div{
+        left: 50px;
+      }
+    }
+
+
+  }
+}
