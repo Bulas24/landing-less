@@ -3,4 +3,108 @@
 
 #solutions{
 
+  padding: 50px 40px 70px;
+ & h1{
+   margin-bottom: 60px;
+   font-size: 40px;
+   text-align: center;
+   font-weight: normal;
+
+ }
+  & .row{
+  .flex-wrap;
+    justify-content: space-around;
+    width: 100%;
+
+
+  & .tile{
+    position: relative;
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: @yellow;
+
+    & .bestseller{
+            position: relative;
+      display: flex;
+      justify-content: center;
+
+      & > div {
+        position: absolute;
+        background-color: @yellow;
+      }
+      & .left{
+        transform: rotate(45deg);
+        width: 30px;
+        height: 27px;
+        left: 42px;
+        top: -17px;
+      }
+      & .text{
+        top: -24px;
+        padding: 6px 30px 0;
+        font-size: 13px;
+        color: @red;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      & .right{
+        transform: rotate(45deg);
+        width: 30px;
+        height: 27px;
+        left: 180px;
+        top: -17px;
+      }
+    }
+    & .header{
+      padding: 30px;
+      & h3{
+        font-size: 25px;
+        font-weight: normal;
+      }
+    }
+
+    & .content{
+      position: relative;
+      padding: 15px;
+      margin-bottom: 10px;
+      height: 200px;
+      background-color: #fff;
+
+
+      & ul{
+        .clean;
+        list-style-image: url("img/checkbox.png");
+        padding: 10px 0 0 30px;
+
+        & li {
+          padding-left: 5px;
+          font-weight: bold;
+          font-size: 13px;
+
+          & span{
+            position: relative;
+            top: -7px;
+          }
+        }
+      }
+      & .cost{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-weight: normal;
+        bottom: 10px;
+        right: 5px;
+        font-size: 40px;
+      }
+    }
+    & .footer{
+      text-align: center;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  }
+  }
 }
