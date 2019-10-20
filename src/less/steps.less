@@ -1,0 +1,64 @@
+@import "partials/mixin";
+@import "partials/params";
+
+@brd_rad : 5px;
+@font_size : 13px;
+
+#steps{
+  padding: 50px 0;
+  text-align: center;
+
+& .tiles{
+    .flex-wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  & .tile{
+      display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-bottom: 10px;
+    & .header{
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 5px;
+      letter-spacing: 2px;
+      background-color: @yellow;
+      font-weight: bold;
+      border-top-left-radius: @brd_rad;
+      border-top-right-radius: @brd_rad;
+    }
+    & .content{
+     text-align: left;
+      flex-grow: 1;
+      margin-bottom: 5px;
+      padding: 20px;
+      background-color: @grey;
+      border-bottom-left-radius: @brd_rad;
+      border-bottom-right-radius: @brd_rad;
+
+      & p {
+        font-size: @font_size;
+        margin-bottom: 5px;
+
+        &.red{
+
+          color:  @red;
+        }
+      }
+
+      & ul{
+        .clean;
+        padding: 10px 0 0 30px;
+        font-size: @font_size;
+
+        & li{
+          line-height: 2;
+        }
+      }
+
+
+    }
+  }
+}
+
+}
